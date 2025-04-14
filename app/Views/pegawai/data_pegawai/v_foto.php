@@ -1,0 +1,32 @@
+<div class="box box-primary box-solid">
+    <div class="box-header">
+        <a href="<?= base_url('pegawai_kelola_data/data_jadwal') ?>" class="btn-sm">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i> Kembali ke Daftar Jadwal
+        </a>
+    </div>
+
+    <!-- /.box-header -->
+    <div class="box-body">
+        <div class="row">
+            <style>
+                iframe {
+                    width: 100%;
+                    height: 80vh;
+                    /* Sesuaikan dengan viewport height */
+                    border: none;
+                    /* Opsional: Menghapus border */
+                }
+
+                .box-header a.btn-sm {
+                    font-size: 14px;
+                    /* Atur ukuran font link */
+                    padding: 5px 10px;
+                    /* Sesuaikan padding tombol */
+                }
+            </style>
+            <div class="col-sm-12">
+                <iframe src="<?= base_url('fotokegiatan/' . $data_jadwal['foto_kegiatan']) ?>" width="100%" height="800px"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
